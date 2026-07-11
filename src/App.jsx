@@ -1,14 +1,7 @@
-
-import './index.css'
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
- 
-
-  return (
-    <>
-      <h1 className='font-mono font-bold '>Inventory Management </h1>
-    </>
-  )
+  return <AppRoutes />;
 }
 
-export default App
+export default App;
