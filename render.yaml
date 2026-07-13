@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: stockcore-backend
+    runtime: java
+    rootDir: backend
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/StockCore-0.0.1-SNAPSHOT.jar
+    plan: free
