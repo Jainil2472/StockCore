@@ -4,7 +4,7 @@ import {
   Mail, Send, User, Building, Phone, CheckCircle, AlertCircle,
   X, ChevronDown, FileText, Users, Loader
 } from 'lucide-react';
-import { partyApi } from '@/api/partyApi';
+import { partyApi } from '@/api/partyapi';
 import { emailApi } from '@/api/emailApi';
 
 // ============================================================================

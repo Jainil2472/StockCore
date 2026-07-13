@@ -4,7 +4,7 @@ import {
   Users, UserPlus, Edit2, Trash2, Search, X, AlertCircle,
   CheckCircle, Mail, Phone, FileText, MapPin, Building
 } from 'lucide-react';
-import { partyApi } from '@/api/partyApi';
+import { partyApi } from '@/api/partyapi';
 
 // ============================================================================
 // ADD/EDIT PARTY MODAL
