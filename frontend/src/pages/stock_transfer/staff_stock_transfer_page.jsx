@@ -10,7 +10,7 @@ import axios from 'axios';
 // API SERVICE (INLINE)
 // ============================================================================
 
-const API_BASE_URL = 'http://localhost:8080';
+import { API_BASE_URL } from '@/api/apiConfig';
 
 const getAuthHeader = () => {
   const token = localStorage.getItem('token');

@@ -10,7 +10,7 @@ import axios from 'axios';
 // AXIOS INSTANCE WITH JWT
 // ============================================================================
 
-const API_BASE_URL = 'http://localhost:8080';
+import { API_BASE_URL } from '@/api/apiConfig';
 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,

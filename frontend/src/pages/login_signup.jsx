@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ArrowRight, TrendingUp, Shield, Loader2 } from 'lucide-react';
 import Logo from '@/assets/black_n_white.png'
 import axios from 'axios';
+import { API_BASE_URL } from '@/api/apiConfig';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext'; // ✅ import
 
@@ -75,7 +76,7 @@ function App() {
           return;
         }
 
-        await axios.post("http://localhost:8080/api/auth/signup", {
+        await axios.post(`${API_BASE_URL}/api/auth/signup`, {
           companyName: formData.companyName,
           email: formData.email,
           password: formData.password,
@@ -98,7 +99,7 @@ function App() {
 
       } else {
         // LOGIN
-        const response = await axios.post("http://localhost:8080/api/auth/login", {
+        const response = await axios.post(`${API_BASE_URL}/api/auth/login`, {
           email: formData.email,
           password: formData.password,
         });

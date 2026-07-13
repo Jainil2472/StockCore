@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Loader } from 'lucide-react';
 import axios from 'axios';
+import { API_BASE_URL } from '@/api/apiConfig';
 
 const QUICK_ACTIONS = [
   'Total stock',
@@ -45,7 +46,7 @@ export default function Chatbot() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        'http://localhost:8080/api/chat',
+        `${API_BASE_URL}/api/chat`,
         { message: trimmedMessage },
         { headers: { Authorization: `Bearer ${token}` } }
       );

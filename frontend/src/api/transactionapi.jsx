@@ -1,7 +1,7 @@
 // services/transactionApi.js
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080';
+import { API_BASE_URL } from './apiConfig';
 
 // Create axios instance with JWT authentication
 const axiosInstance = axios.create({

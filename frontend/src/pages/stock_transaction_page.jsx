@@ -13,7 +13,9 @@ import axios from 'axios';
 // ─────────────────────────────────────────────
 // CONFIG
 // ─────────────────────────────────────────────
-const API_BASE = 'http://localhost:8080';
+import { API_BASE_URL } from '@/api/apiConfig';
+
+const API_BASE = API_BASE_URL;
 
 const api = axios.create({ baseURL: API_BASE });
 api.interceptors.request.use(cfg => {
