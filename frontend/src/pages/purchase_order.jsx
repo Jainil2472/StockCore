@@ -5,7 +5,7 @@ import {
   X, ChevronDown, FileText, Users, Loader
 } from 'lucide-react';
 import { partyApi } from '@/api/partyapi';
-import { emailApi } from '@/api/emailApi';
+import { emailApi } from '@/api/emailapi';
 
 // ============================================================================
 // DEFAULT EMAIL TEMPLATE
